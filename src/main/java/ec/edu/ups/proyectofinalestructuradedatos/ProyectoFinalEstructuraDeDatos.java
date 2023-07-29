@@ -4,7 +4,7 @@
 
 package ec.edu.ups.proyectofinalestructuradedatos;
 
-import Controlador.Controlador;
+import ec.edu.ups.proyectofinalestructuradedatos.controlador.Controlador;
 import ec.edu.ups.proyectofinalestructuradedatos.Modelo.ArbolContactos;
 import ec.edu.ups.proyectofinalestructuradedatos.Vista.Vista;
 
