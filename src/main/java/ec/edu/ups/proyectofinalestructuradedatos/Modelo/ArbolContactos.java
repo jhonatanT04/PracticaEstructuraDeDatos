@@ -167,15 +167,36 @@ public class ArbolContactos {
     }
     
     
+    public Contacto buscarContacto(String nombre) {
+        return buscarContactoRecursivo(nombre, raiz);
+    }
+
+    private Contacto buscarContactoRecursivo(String nombre, Nodo nodoActual) {
+        if (nodoActual == null) {
+            return null;
+        }
+
+        int comparacion = nombre.compareTo(nodoActual.getContacto().getNombre());
+
+        if (comparacion == 0) {
+            return nodoActual.getContacto();
+        } else if (comparacion < 0) {
+            return buscarContactoRecursivo(nombre, nodoActual.getIzquierdo());
+        } else {
+            return buscarContactoRecursivo(nombre, nodoActual.getDerecho());
+        }
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
+    public void agregarRedSocial(String nombreContacto, String redSocial, String url) {
+        Contacto contacto = buscarContacto(nombreContacto);
+
+        if (contacto != null) {
+            contacto.agregarRedSocial(redSocial, url);
+            System.out.println("Red social agregada exitosamente.");
+        } else {
+            System.out.println("Contacto no encontrado. No se pudo agregar la red social.");
+        }
+    }
     
     
     
