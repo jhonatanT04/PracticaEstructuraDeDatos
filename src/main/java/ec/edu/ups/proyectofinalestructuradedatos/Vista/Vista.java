@@ -94,4 +94,22 @@ public class Vista {
     public void preorden(){
         
     }
+    
+    public String obtenerTexto(){
+        System.out.println("Ingrese el nombre del contacto al que desea agregar la red social: ");
+        String nombre = teclado.next();
+        return nombre;
+    }
+    
+    public String obtenerTexto1(){
+        System.out.println("Ingrese el nombre de la red social: ");
+        String red = teclado.next();
+        return red;
+    }
+    
+    public String obtenerTexto2(){
+        System.out.println("Ingrese la URL de la red social: ");
+        String url = teclado.next();
+        return url;
+    }
 }
