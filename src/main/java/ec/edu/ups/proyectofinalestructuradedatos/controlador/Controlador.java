@@ -74,6 +74,20 @@ public class Controlador {
         vista.preorden();
         arbolContactos.preordenRecursivo(arbolContactos.getRaiz());
     }
+    
+    public void agregarRedSocial() {
+        String nombre = vista.obtenerTexto();
+        contacto = arbolContactos.buscarContacto(nombre);
+
+        if (contacto != null) {
+            String redSocial = vista.obtenerTexto1();
+            String url = vista.obtenerTexto2();
+            contacto.agregarRedSocial(redSocial, url);
+            System.out.println("Red social agregada exitosamente.");
+        } else {
+            System.out.println("Contacto no encontrado. No se pudo agregar la red social.");
+        }
+    }
     public void menu(){
         int opcion=0;
         do {
@@ -94,6 +108,7 @@ public class Controlador {
                 case 5:
                     // Agregar Red Social
                     // Pedir nombre, red social y URL, agregar la red social al contacto correspondiente
+                    this.agregarRedSocial();
                     break;
                 case 6:
                     this.preorden();
