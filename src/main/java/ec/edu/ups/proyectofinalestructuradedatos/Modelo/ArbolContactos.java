@@ -198,7 +198,16 @@ public class ArbolContactos {
         }
     }
     
-    
+    public void agregarCorreo(String nombreContacto, String correo) {
+        Contacto contacto = buscarContacto(nombreContacto);
+
+        if (contacto != null) {
+            contacto.agregarCorreo(correo);
+            System.out.println("Correo agregado exitosamente.");
+        } else {
+            System.out.println("Contacto no encontrado. No se pudo agregar el correo.");
+        }
+    }
     
     public void printTreeNode(Nodo root, String prefix, boolean isLeft) {
         if (root != null) {

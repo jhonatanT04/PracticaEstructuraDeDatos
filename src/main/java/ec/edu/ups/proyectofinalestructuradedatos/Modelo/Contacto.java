@@ -4,7 +4,9 @@
  */
 package ec.edu.ups.proyectofinalestructuradedatos.Modelo;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -14,6 +16,7 @@ import java.util.Map;
 public class Contacto {
     private String nombre;
     private String numero;
+    private List<String> correos;
     private Map<String, String> redesSociales;
     
 
@@ -21,6 +24,11 @@ public class Contacto {
         this.nombre = nombre;
         this.numero = numero;
         this.redesSociales = new HashMap<>();
+        this.correos = new ArrayList<>();
+    }
+    
+    public void agregarCorreo(String correo) {
+        correos.add(correo);
     }
     
     public void agregarRedSocial(String redSocial, String url) {

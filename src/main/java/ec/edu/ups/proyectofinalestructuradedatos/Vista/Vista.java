@@ -112,4 +112,16 @@ public class Vista {
         String url = teclado.next();
         return url;
     }
+    
+    public String obtenerTexto3(){
+        System.out.println("Ingrese el nombre del contacto al que desea agregar el correo: ");
+        String nm = teclado.next();
+        return nm;
+    }
+    
+    public String obtenerTexto4(){
+        System.out.println("Ingrese el correo a agregar: ");
+        String correo = teclado.next();
+        return correo;
+    }    
 }

@@ -88,6 +88,20 @@ public class Controlador {
             System.out.println("Contacto no encontrado. No se pudo agregar la red social.");
         }
     }
+    
+    public void agregarCorreo() {
+        String nombre = vista.obtenerTexto3();
+        contacto = arbolContactos.buscarContacto(nombre);
+
+        if (contacto != null) {
+            String correo = vista.obtenerTexto4();
+            contacto.agregarCorreo(correo);
+            System.out.println("Correo agregado exitosamente.");
+        } else {
+            System.out.println("Contacto no encontrado. No se pudo agregar el correo.");
+        }
+    }
+    
     public void menu(){
         int opcion=0;
         do {
