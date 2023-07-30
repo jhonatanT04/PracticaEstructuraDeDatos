@@ -120,7 +120,7 @@ public class Controlador {
                     break;
                 case 5:
                     // Agregar Red Social
-                    // Pedir nombre, red social y URL, agregar la red social al contacto correspondiente
+                    // Pedir nombre, red social 
                     this.agregarRedSocial();
                     break;
                 case 6:
