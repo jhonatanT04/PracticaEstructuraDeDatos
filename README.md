@@ -45,7 +45,7 @@ inorderTraversal(): Realiza un recorrido en orden del árbol y devuelve una list
 
 ## Gestión del Árbol
 
-### Documentación del Método inorder():
+### Documentación Metodos Gestión del Árbol
 
 #### 1. Método insertar(Contacto contacto):
 
