@@ -1,5 +1,5 @@
 # UNIVERSIDAD POLITECNICA SALESIANA
 ESTRUCTURA DE DATOS
-  Árboles Binarios
-  Diccionarios
+Árboles Binarios
+Diccionarios
   
