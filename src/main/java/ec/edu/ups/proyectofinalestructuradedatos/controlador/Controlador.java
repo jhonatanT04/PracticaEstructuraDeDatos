@@ -117,7 +117,7 @@ public class Controlador {
                     this.eliminarContacto();
                 case 4:
                     // Agregar Correo
-                    // Pedir nombre y correo, agregar el correo al contacto correspondiente
+                    // 
                     this.agregarCorreo();
                     break;
                 case 5:
