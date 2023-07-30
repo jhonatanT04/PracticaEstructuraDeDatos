@@ -116,8 +116,6 @@ public class Controlador {
                 case 3:
                     this.eliminarContacto();
                 case 4:
-                    // Agregar Correo
-                    // 
                     this.agregarCorreo();
                     break;
                 case 5:
