@@ -1,4 +1,4 @@
-# UNIVERSIDAD POLITECNICA SALESIANA
+# Universidad Politécnica Salesiana
 ESTRUCTURA DE DATOS
 
 - Árboles Binarios
