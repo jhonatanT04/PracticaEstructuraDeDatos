@@ -119,7 +119,6 @@ public class Controlador {
                     this.agregarCorreo();
                     break;
                 case 5:
-                    
                     this.agregarRedSocial();
                     break;
                 case 6:
