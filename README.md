@@ -43,7 +43,21 @@ El proyecto consiste en desarrollar un programa para gestionar una lista de cont
 inorderTraversal(): Realiza un recorrido en orden del árbol y devuelve una lista con los contactos en orden alfabético según su nombre.
   - Otros métodos auxiliares para el funcionamiento del árbol binario de búsqueda, como inserción ordenada y búsqueda recursiva.
 
+### Documentación del Método inorderTraversal():
 
+El método inorderTraversal() es un recorrido en orden que se realiza en el árbol binario de búsqueda. El recorrido en orden es un algoritmo de recorrido de árbol que visita los nodos del árbol en orden ascendente según su valor. Para el caso de la implementación de este método, se devuelven los contactos en orden alfabético según su nombre.
+
+Para realizar el recorrido en orden, el algoritmo se basa en una estrategia recursiva. Inicia desde la raíz y visita los nodos en el siguiente orden:
+
+1. Visitar el nodo hijo izquierdo.
+2. Visitar el nodo actual (raíz).
+3. Visitar el nodo hijo derecho.
+   
+De esta forma, el método va recorriendo todos los nodos del árbol en orden ascendente y los agrega a una lista. Al final del recorrido, se tiene una lista de contactos ordenados alfabéticamente según su nombre.
+
+La implementación recursiva se realiza mediante un método auxiliar privado inorderTraversalRecursivo(Nodo nodoActual, List<Contacto> listaContactos). Este método se invoca inicialmente desde inorderTraversal() con el nodo raíz y una lista vacía. En cada llamada recursiva, el nodo actual se visita y se agrega a la lista de contactos. Luego, se realiza una llamada recursiva para el nodo hijo izquierdo y otra para el nodo hijo derecho. Esto se repite hasta que todos los nodos hayan sido visitados, y la lista final contiene los contactos en orden alfabético.
+
+Al utilizar el recorrido en orden, se obtiene una lista de contactos ordenada, lo que facilita la presentación de los resultados de forma organizada al usuario.
 
 
   
