@@ -19,6 +19,6 @@ public class ProyectoFinalEstructuraDeDatos {
         ArbolContactos arbolContactos = new ArbolContactos();
         Controlador controlador = new Controlador(vista, arbolContactos);
         controlador.menu();
-        //aa
+        
     }
 }

@@ -73,14 +73,15 @@ public class ArbolContactos {
     
     
     public Nodo buscarRecursivo(Nodo nodo, String nombre) {
-    if (nodo == null || nodo.getContacto().getNombre().equals(nombre)) {
-        return nodo;
-    }if (nombre.compareTo(nodo.getContacto().getNombre()) < 0) {
-        return buscarRecursivo(nodo.getIzquierdo(), nombre);
-    } else {
-        return buscarRecursivo(nodo.getDerecho(), nombre);
+        if (nodo == null || nodo.getContacto().getNombre().equals(nombre)) {
+            return nodo;
+        }if (nombre.compareTo(nodo.getContacto().getNombre()) < 0) {
+            return buscarRecursivo(nodo.getIzquierdo(), nombre);
+        } else {
+            return buscarRecursivo(nodo.getDerecho(), nombre);
+            }
         }
-    }
+    
     public void eliminarContacto(String name){
         raiz = eliminarContactoRec(raiz, name);
     }
