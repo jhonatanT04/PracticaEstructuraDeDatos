@@ -43,6 +43,39 @@ El proyecto consiste en desarrollar un programa para gestionar una lista de cont
 inorderTraversal(): Realiza un recorrido en orden del árbol y devuelve una lista con los contactos en orden alfabético según su nombre.
   - Otros métodos auxiliares para el funcionamiento del árbol binario de búsqueda, como inserción ordenada y búsqueda recursiva.
 
+ #### 4. Controlador:
+ - Atributos:
+   
+    - vista (Vista): Referencia a la clase que maneja la interfaz de usuario.
+    - arbolContactos (ArbolContactos): Referencia al árbol binario de búsqueda que almacena los contactos.
+    - contacto (Contacto): Representa un contacto temporal que se utiliza para realizar operaciones con los contactos del árbol.
+    
+- Constructor:
+
+  - Controlador(Vista vista, ArbolContactos arbolContactos): El constructor recibe como parámetros una instancia de la clase Vista y otra de la clase       ArbolContactos. Estas referencias son almacenadas en los atributos correspondientes para su uso posterior en los métodos de la clase.
+    
+- Métodos:
+
+  - agregarContacto(): Este método se encarga de agregar un nuevo contacto al árbol. 
+  - buscarPorNombre(): Este método busca un contacto en el árbol por su nombre. 
+  - eliminarContacto(): Este método elimina un contacto del árbol por su nombre. 
+  - obtenerAltura(): Este método obtiene la altura del árbol utilizando el método obtenerAltura(Nodo nodo) del árbol. Muestra la altura al usuario utilizando el método altura(int alt) de la clase Vista.
+  - inorden(), preOrden(), postOrden(), niveles(): Estos métodos realizan los recorridos inorden, preorden, postorden y en niveles del árbol, respectivamente. Muestran los nombres de los contactos en cada recorrido utilizando los métodos correspondientes de la clase Vista y los métodos de recorrido implementados en la clase ArbolContactos.
+  - numContactos(): Este método obtiene el número total de contactos en el árbol utilizando el atributo numContactos de la clase ArbolContactos. 
+  - agregarRedSocial(): Este método permite agregar una red social a un contacto existente en el árbol. 
+  - agregarCorreo(): Este método permite agregar un correo electrónico a un contacto existente en el árbol
+  - menu(): Este método muestra el menú de opciones al usuario y ejecuta las acciones correspondientes según la opción seleccionada.
+#### 5. Vista:
+
+- Atributos:
+
+  - teclado (Scanner): Un objeto de la clase Scanner que se utiliza para leer la entrada del usuario desde la consola.
+  - arbol (ArbolContactos): Una referencia al árbol binario de búsqueda que almacena los contactos. (Aunque no parece ser utilizado en los métodos, podría ser útil para interactuar con el árbol en futuras extensiones de la clase).
+ 
+- Métodos:
+
+  - Diferentes metodos que muestran mensajes al usuario.
+
 ## Gestión del Árbol
 
 ### Documentación Metodos Gestión del Árbol
