@@ -50,10 +50,6 @@ public class Contacto {
 
     @Override
     public String toString() {
-        return "Contacto{" + "nombre=" + nombre + ", numero=" + numero + ", redesSociales=" + redesSociales + '}';
+        return "Contacto{" + "nombre=" + nombre + ", numero=" + numero + ", correos=" + correos + ", redesSociales=" + redesSociales + '}';
     }
-    
-    
-    
-    
 }
